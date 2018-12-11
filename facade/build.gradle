@@ -9,12 +9,12 @@ android {
 }
 
 dependencies {
-    // manifest is exported to app
+    // manifest is merged app (with api dep as well)
     implementation project(':internal')
 
-    // not exported!
+    // not merged!
     implementation 'com.facebook.android:facebook-core:4.34.0'
 
-    // exported this way only
+    // manifest is merged in app this way only
     // api 'com.facebook.android:facebook-core:4.34.0'
 }
