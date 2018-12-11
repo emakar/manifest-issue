@@ -9,7 +9,7 @@ android {
 }
 
 dependencies {
-    // manifest is merged app (with api dep as well)
+    // manifest is merged in app (works with api dep as well)
     implementation project(':internal')
 
     // not merged!
