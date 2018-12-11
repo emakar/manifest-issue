@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="issue.manifeststuck.internal">
+
+    <application tools:ignore="AllowBackup,GoogleAppIndexingWarning,MissingApplicationIcon">
+
+        <receiver
+            android:name=".MyReceiver"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

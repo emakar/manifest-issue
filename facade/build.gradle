@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+    }
+}
+
+dependencies {
+    // manifest is exported to app
+    implementation project(':internal')
+
+    // not exported!
+    implementation 'com.facebook.android:facebook-core:4.34.0'
+
+    // exported this way only
+    // api 'com.facebook.android:facebook-core:4.34.0'
+}
